@@ -1,0 +1,505 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0.1 (Python 3.12.4 on darwin)" generated="2024-07-08T22:01:37.261200" rpa="false" schemaversion="5">
+<suite id="s1" name="Tests" source="/Users/tonnarruda/workspace/ton/robot_appium/tests">
+<suite id="s1-s1" name="consultaBatidas" source="/Users/tonnarruda/workspace/ton/robot_appium/tests/consultaBatidas.robot">
+<test id="s1-s1-t1" name="Consultar Batidas de Ponto" line="8">
+<kw name="Login" owner="base" type="SETUP">
+<kw name="Open Session" owner="base">
+<kw name="Open Application" owner="AppiumLibrary">
+<arg>http://0.0.0.0:4723</arg>
+<arg>appium:automationName=UiAutomator2</arg>
+<arg>platformName=Android</arg>
+<arg>appium:deviceName=Emulator</arg>
+<arg>appium:app=${APK_PATH}</arg>
+<arg>appium:udid=emulator-5554</arg>
+<arg>appium:appPackage=br.com.fortes.appcolaborador.homolog</arg>
+<arg>appium:appActivity=br.com.fortes.appcolaborador.ui.SplashScreenActivity</arg>
+<arg>autoGrantPermissions=true</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://appium.io/docs/en/2.1/cli/args/
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |
+| strict_ssl          | No     | allows you to send commands to an invalid certificate host like a self-signed one. |</doc>
+<status status="PASS" start="2024-07-08T22:01:37.385897" elapsed="4.359962"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2024-07-08T22:01:42.665335" level="INFO">criteria is br.com.fortes.appcolaborador.homolog:id/btn_enter</msg>
+<arg>id=br.com.fortes.appcolaborador.homolog:id/btn_enter</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2024-07-08T22:01:41.746558" elapsed="0.918962"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-07-08T22:01:42.668227" level="INFO">Clicking element 'id=br.com.fortes.appcolaborador.homolog:id/btn_enter'.</msg>
+<msg time="2024-07-08T22:01:42.765627" level="INFO">criteria is br.com.fortes.appcolaborador.homolog:id/btn_enter</msg>
+<arg>id=br.com.fortes.appcolaborador.homolog:id/btn_enter</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-07-08T22:01:42.665896" elapsed="0.099809"/>
+</kw>
+<status status="PASS" start="2024-07-08T22:01:37.385545" elapsed="5.380295"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2024-07-08T22:01:43.895165" level="INFO">criteria is br.com.fortes.appcolaborador.homolog:id/et_cpf
+criteria is br.com.fortes.appcolaborador.homolog:id/et_cpf</msg>
+<arg>${CPF}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2024-07-08T22:01:42.765979" elapsed="1.129498"/>
+</kw>
+<kw name="Input Text" owner="AppiumLibrary">
+<msg time="2024-07-08T22:01:43.897939" level="INFO">Typing text '76963355452' into text field 'id=br.com.fortes.appcolaborador.homolog:id/et_cpf'</msg>
+<msg time="2024-07-08T22:01:44.441221" level="INFO">criteria is br.com.fortes.appcolaborador.homolog:id/et_cpf</msg>
+<arg>${CPF}</arg>
+<arg>76963355452</arg>
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<status status="PASS" start="2024-07-08T22:01:43.896101" elapsed="0.545297"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2024-07-08T22:01:45.072974" level="INFO">criteria is br.com.fortes.appcolaborador.homolog:id/et_password</msg>
+<arg>${PASSWORD}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2024-07-08T22:01:44.441656" elapsed="0.631565"/>
+</kw>
+<kw name="Input Text" owner="AppiumLibrary">
+<msg time="2024-07-08T22:01:45.076163" level="INFO">Typing text '12345678' into text field 'id=br.com.fortes.appcolaborador.homolog:id/et_password'</msg>
+<msg time="2024-07-08T22:01:45.621524" level="INFO">criteria is br.com.fortes.appcolaborador.homolog:id/et_password</msg>
+<arg>${PASSWORD}</arg>
+<arg>12345678</arg>
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<status status="PASS" start="2024-07-08T22:01:45.073709" elapsed="0.547945"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-07-08T22:01:45.623308" level="INFO">Clicking element 'id=br.com.fortes.appcolaborador.homolog:id/btn_sign_in'.</msg>
+<msg time="2024-07-08T22:01:46.193063" level="INFO">criteria is br.com.fortes.appcolaborador.homolog:id/btn_sign_in</msg>
+<arg>${BTN_ENTRAR}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-07-08T22:01:45.621906" elapsed="0.571261"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2024-07-08T22:01:48.798129" level="INFO">criteria is android:id/message
+criteria is android:id/message
+criteria is android:id/message
+criteria is android:id/message
+criteria is android:id/message
+criteria is android:id/message</msg>
+<arg>id=android:id/message</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2024-07-08T22:01:46.193326" elapsed="2.604923"/>
+</kw>
+<kw name="Click Text" owner="AppiumLibrary">
+<msg time="2024-07-08T22:01:49.086604" level="INFO">xpath criteria: //*[contains(@text,"OK")]</msg>
+<arg>OK</arg>
+<doc>Click text identified by ``text``.</doc>
+<status status="PASS" start="2024-07-08T22:01:48.798476" elapsed="0.288246"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2024-07-08T22:01:50.285109" level="INFO">criteria is android:id/button1</msg>
+<arg>id=android:id/button1</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2024-07-08T22:01:49.086947" elapsed="1.198405"/>
+</kw>
+<kw name="Click Text" owner="AppiumLibrary">
+<msg time="2024-07-08T22:01:50.387522" level="INFO">xpath criteria: //*[contains(@text,"USE THIS FOLDER")]</msg>
+<arg>USE THIS FOLDER</arg>
+<doc>Click text identified by ``text``.</doc>
+<status status="PASS" start="2024-07-08T22:01:50.285807" elapsed="0.101827"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2024-07-08T22:01:51.010640" level="INFO">criteria is android:id/button1
+criteria is android:id/button1</msg>
+<arg>id=android:id/button1</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2024-07-08T22:01:50.387857" elapsed="0.622969"/>
+</kw>
+<kw name="Click Text" owner="AppiumLibrary">
+<msg time="2024-07-08T22:01:51.086311" level="INFO">xpath criteria: //*[contains(@text,"ALLOW")]</msg>
+<arg>ALLOW</arg>
+<doc>Click text identified by ``text``.</doc>
+<status status="PASS" start="2024-07-08T22:01:51.011114" elapsed="0.075348"/>
+</kw>
+<status status="PASS" start="2024-07-08T22:01:37.385357" elapsed="13.701423"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2024-07-08T22:01:52.226225" level="INFO">xpath criteria: //android.widget.TextView[@resource-id="br.com.fortes.appcolaborador.homolog:id/navigation_bar_item_small_label_view" and @text="Ponto"]
+xpath criteria: //android.widget.TextView[@resource-id="br.com.fortes.appcolaborador.homolog:id/navigation_bar_item_small_label_view" and @text="Ponto"]</msg>
+<arg>xpath=//android.widget.TextView[@resource-id="br.com.fortes.appcolaborador.homolog:id/navigation_bar_item_small_label_view" and @text="Ponto"]</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2024-07-08T22:01:51.087455" elapsed="1.138825"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-07-08T22:01:52.227408" level="INFO">Clicking element 'xpath=//android.widget.TextView[@resource-id="br.com.fortes.appcolaborador.homolog:id/navigation_bar_item_small_label_view" and @text="Ponto"]'.</msg>
+<msg time="2024-07-08T22:01:53.184419" level="INFO">xpath criteria: //android.widget.TextView[@resource-id="br.com.fortes.appcolaborador.homolog:id/navigation_bar_item_small_label_view" and @text="Ponto"]</msg>
+<arg>xpath=//android.widget.TextView[@resource-id="br.com.fortes.appcolaborador.homolog:id/navigation_bar_item_small_label_view" and @text="Ponto"]</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-07-08T22:01:52.226467" elapsed="0.958117"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2024-07-08T22:01:53.221373" level="INFO">criteria is br.com.fortes.appcolaborador.homolog:id/text_functionality</msg>
+<arg>id=br.com.fortes.appcolaborador.homolog:id/text_functionality</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2024-07-08T22:01:53.185245" elapsed="0.036238"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-07-08T22:01:53.223810" level="INFO">Clicking element 'id=br.com.fortes.appcolaborador.homolog:id/text_functionality'.</msg>
+<msg time="2024-07-08T22:01:53.287208" level="INFO">criteria is br.com.fortes.appcolaborador.homolog:id/text_functionality</msg>
+<arg>id=br.com.fortes.appcolaborador.homolog:id/text_functionality</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-07-08T22:01:53.221778" elapsed="0.065540"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2024-07-08T22:01:54.167921" level="INFO">criteria is br.com.fortes.appcolaborador.homolog:id/text_matricula</msg>
+<arg>id=br.com.fortes.appcolaborador.homolog:id/text_matricula</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2024-07-08T22:01:53.287711" elapsed="0.880349"/>
+</kw>
+<kw name="Click Text" owner="AppiumLibrary">
+<msg time="2024-07-08T22:01:54.271343" level="INFO">xpath criteria: //*[contains(@text,"mar.")]</msg>
+<arg>mar.</arg>
+<doc>Click text identified by ``text``.</doc>
+<status status="PASS" start="2024-07-08T22:01:54.168432" elapsed="0.103066"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2024-07-08T22:01:55.444317" level="INFO">criteria is br.com.fortes.appcolaborador.homolog:id/tv_data_month</msg>
+<arg>id=br.com.fortes.appcolaborador.homolog:id/tv_data_month</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2024-07-08T22:01:54.271901" elapsed="1.172508"/>
+</kw>
+<kw name="Get Text" owner="AppiumLibrary">
+<msg time="2024-07-08T22:01:55.498707" level="INFO">Element 'id=br.com.fortes.appcolaborador.homolog:id/tv_data_month' text is 'Março - 2024' </msg>
+<msg time="2024-07-08T22:01:55.499001" level="INFO">criteria is br.com.fortes.appcolaborador.homolog:id/tv_data_month</msg>
+<msg time="2024-07-08T22:01:55.500068" level="INFO">${data_month} = Março - 2024</msg>
+<var>${data_month}</var>
+<arg>id=br.com.fortes.appcolaborador.homolog:id/tv_data_month</arg>
+<doc>Get element text (for hybrid and mobile browser use `xpath` locator, others might cause problem)</doc>
+<status status="PASS" start="2024-07-08T22:01:55.444667" elapsed="0.055438"/>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${data_month}</arg>
+<arg>Março - 2024</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2024-07-08T22:01:55.500488" elapsed="0.000276"/>
+</kw>
+<kw name="Get Text" owner="AppiumLibrary">
+<msg time="2024-07-08T22:01:55.589533" level="INFO">Element 'xpath=//android.widget.TextView[@resource-id="br.com.fortes.appcolaborador.homolog:id/bh_tv_date" and @text="29/03/2024 (Sexta-feira)"]' text is '29/03/2024 (Sexta-feira)' </msg>
+<msg time="2024-07-08T22:01:55.589671" level="INFO">xpath criteria: //android.widget.TextView[@resource-id="br.com.fortes.appcolaborador.homolog:id/bh_tv_date" and @text="29/03/2024 (Sexta-feira)"]</msg>
+<msg time="2024-07-08T22:01:55.589834" level="INFO">${data_batida} = 29/03/2024 (Sexta-feira)</msg>
+<var>${data_batida}</var>
+<arg>xpath=//android.widget.TextView[@resource-id="br.com.fortes.appcolaborador.homolog:id/bh_tv_date" and @text="29/03/2024 (Sexta-feira)"]</arg>
+<doc>Get element text (for hybrid and mobile browser use `xpath` locator, others might cause problem)</doc>
+<status status="PASS" start="2024-07-08T22:01:55.500926" elapsed="0.088954"/>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${data_batida}</arg>
+<arg>29/03/2024 (Sexta-feira)</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2024-07-08T22:01:55.590208" elapsed="0.000210"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-07-08T22:02:00.592331" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-07-08T22:01:55.590578" elapsed="5.002125"/>
+</kw>
+<kw name="Close Session" owner="base" type="TEARDOWN">
+<kw name="Close Application" owner="AppiumLibrary">
+<doc>Closes the current application and also close webdriver session.</doc>
+<status status="PASS" start="2024-07-08T22:02:00.594820" elapsed="0.223349"/>
+</kw>
+<status status="PASS" start="2024-07-08T22:02:00.593987" elapsed="0.224494"/>
+</kw>
+<status status="PASS" start="2024-07-08T22:01:37.385002" elapsed="23.433711"/>
+</test>
+<status status="PASS" start="2024-07-08T22:01:37.282518" elapsed="23.537184"/>
+</suite>
+<suite id="s1-s2" name="Login" source="/Users/tonnarruda/workspace/ton/robot_appium/tests/login.robot">
+<test id="s1-s2-t1" name="Login com sucesso" line="8">
+<kw name="Open Session" owner="base" type="SETUP">
+<kw name="Open Application" owner="AppiumLibrary">
+<arg>http://0.0.0.0:4723</arg>
+<arg>appium:automationName=UiAutomator2</arg>
+<arg>platformName=Android</arg>
+<arg>appium:deviceName=Emulator</arg>
+<arg>appium:app=${APK_PATH}</arg>
+<arg>appium:udid=emulator-5554</arg>
+<arg>appium:appPackage=br.com.fortes.appcolaborador.homolog</arg>
+<arg>appium:appActivity=br.com.fortes.appcolaborador.ui.SplashScreenActivity</arg>
+<arg>autoGrantPermissions=true</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://appium.io/docs/en/2.1/cli/args/
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |
+| strict_ssl          | No     | allows you to send commands to an invalid certificate host like a self-signed one. |</doc>
+<status status="PASS" start="2024-07-08T22:02:00.824201" elapsed="5.585872"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2024-07-08T22:02:07.338761" level="INFO">criteria is br.com.fortes.appcolaborador.homolog:id/btn_enter</msg>
+<arg>id=br.com.fortes.appcolaborador.homolog:id/btn_enter</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2024-07-08T22:02:06.411195" elapsed="0.927705"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-07-08T22:02:07.340827" level="INFO">Clicking element 'id=br.com.fortes.appcolaborador.homolog:id/btn_enter'.</msg>
+<msg time="2024-07-08T22:02:07.431703" level="INFO">criteria is br.com.fortes.appcolaborador.homolog:id/btn_enter</msg>
+<arg>id=br.com.fortes.appcolaborador.homolog:id/btn_enter</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-07-08T22:02:07.339294" elapsed="0.092500"/>
+</kw>
+<status status="PASS" start="2024-07-08T22:02:00.823896" elapsed="6.608033"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2024-07-08T22:02:08.564639" level="INFO">criteria is br.com.fortes.appcolaborador.homolog:id/et_cpf
+criteria is br.com.fortes.appcolaborador.homolog:id/et_cpf</msg>
+<arg>${CPF}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2024-07-08T22:02:07.432236" elapsed="1.132487"/>
+</kw>
+<kw name="Input Text" owner="AppiumLibrary">
+<msg time="2024-07-08T22:02:08.565900" level="INFO">Typing text '76963355452' into text field 'id=br.com.fortes.appcolaborador.homolog:id/et_cpf'</msg>
+<msg time="2024-07-08T22:02:09.111167" level="INFO">criteria is br.com.fortes.appcolaborador.homolog:id/et_cpf</msg>
+<arg>${CPF}</arg>
+<arg>76963355452</arg>
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<status status="PASS" start="2024-07-08T22:02:08.564963" elapsed="0.546354"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2024-07-08T22:02:09.745469" level="INFO">criteria is br.com.fortes.appcolaborador.homolog:id/et_password</msg>
+<arg>${PASSWORD}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2024-07-08T22:02:09.113087" elapsed="0.632619"/>
+</kw>
+<kw name="Input Text" owner="AppiumLibrary">
+<msg time="2024-07-08T22:02:09.748774" level="INFO">Typing text '12345678' into text field 'id=br.com.fortes.appcolaborador.homolog:id/et_password'</msg>
+<msg time="2024-07-08T22:02:10.296594" level="INFO">criteria is br.com.fortes.appcolaborador.homolog:id/et_password</msg>
+<arg>${PASSWORD}</arg>
+<arg>12345678</arg>
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<status status="PASS" start="2024-07-08T22:02:09.746320" elapsed="0.550422"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-07-08T22:02:10.298110" level="INFO">Clicking element 'id=br.com.fortes.appcolaborador.homolog:id/btn_sign_in'.</msg>
+<msg time="2024-07-08T22:02:10.880812" level="INFO">criteria is br.com.fortes.appcolaborador.homolog:id/btn_sign_in</msg>
+<arg>${BTN_ENTRAR}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-07-08T22:02:10.297024" elapsed="0.583900"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2024-07-08T22:02:13.434083" level="INFO">criteria is android:id/message
+criteria is android:id/message
+criteria is android:id/message
+criteria is android:id/message
+criteria is android:id/message</msg>
+<arg>id=android:id/message</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2024-07-08T22:02:10.881138" elapsed="2.553093"/>
+</kw>
+<kw name="Click Text" owner="AppiumLibrary">
+<msg time="2024-07-08T22:02:13.720471" level="INFO">xpath criteria: //*[contains(@text,"OK")]</msg>
+<arg>OK</arg>
+<doc>Click text identified by ``text``.</doc>
+<status status="PASS" start="2024-07-08T22:02:13.434615" elapsed="0.286011"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2024-07-08T22:02:14.909909" level="INFO">criteria is android:id/button1
+criteria is android:id/button1</msg>
+<arg>id=android:id/button1</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2024-07-08T22:02:13.721108" elapsed="1.188959"/>
+</kw>
+<kw name="Click Text" owner="AppiumLibrary">
+<msg time="2024-07-08T22:02:15.892064" level="INFO">xpath criteria: //*[contains(@text,"USE THIS FOLDER")]</msg>
+<arg>USE THIS FOLDER</arg>
+<doc>Click text identified by ``text``.</doc>
+<status status="PASS" start="2024-07-08T22:02:14.910660" elapsed="0.981584"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2024-07-08T22:02:16.513499" level="INFO">criteria is android:id/button1</msg>
+<arg>id=android:id/button1</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2024-07-08T22:02:15.892885" elapsed="0.620760"/>
+</kw>
+<kw name="Click Text" owner="AppiumLibrary">
+<msg time="2024-07-08T22:02:16.585415" level="INFO">xpath criteria: //*[contains(@text,"ALLOW")]</msg>
+<arg>ALLOW</arg>
+<doc>Click text identified by ``text``.</doc>
+<status status="PASS" start="2024-07-08T22:02:16.514029" elapsed="0.071530"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2024-07-08T22:02:17.637575" level="INFO">criteria is br.com.fortes.appcolaborador.homolog:id/tv_company</msg>
+<arg>id=br.com.fortes.appcolaborador.homolog:id/tv_company</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2024-07-08T22:02:16.585944" elapsed="1.051807"/>
+</kw>
+<kw name="Element Text Should Be" owner="AppiumLibrary">
+<msg time="2024-07-08T22:02:17.640030" level="INFO">Verifying element 'id=br.com.fortes.appcolaborador.homolog:id/tv_company' contains exactly text 'PERSI D 10821992'.</msg>
+<msg time="2024-07-08T22:02:17.695375" level="INFO">criteria is br.com.fortes.appcolaborador.homolog:id/tv_company</msg>
+<arg>id=br.com.fortes.appcolaborador.homolog:id/tv_company</arg>
+<arg>PERSI D 10821992</arg>
+<doc>Verifies element identified by ``locator`` exactly contains text ``expected``.</doc>
+<status status="PASS" start="2024-07-08T22:02:17.638206" elapsed="0.057280"/>
+</kw>
+<kw name="Close Session" owner="base" type="TEARDOWN">
+<kw name="Close Application" owner="AppiumLibrary">
+<doc>Closes the current application and also close webdriver session.</doc>
+<status status="PASS" start="2024-07-08T22:02:17.696663" elapsed="0.132914"/>
+</kw>
+<status status="PASS" start="2024-07-08T22:02:17.696219" elapsed="0.133477"/>
+</kw>
+<status status="PASS" start="2024-07-08T22:02:00.823474" elapsed="17.006325"/>
+</test>
+<test id="s1-s2-t2" name="Login sem sucesso" line="23">
+<kw name="Open Session" owner="base" type="SETUP">
+<kw name="Open Application" owner="AppiumLibrary">
+<arg>http://0.0.0.0:4723</arg>
+<arg>appium:automationName=UiAutomator2</arg>
+<arg>platformName=Android</arg>
+<arg>appium:deviceName=Emulator</arg>
+<arg>appium:app=${APK_PATH}</arg>
+<arg>appium:udid=emulator-5554</arg>
+<arg>appium:appPackage=br.com.fortes.appcolaborador.homolog</arg>
+<arg>appium:appActivity=br.com.fortes.appcolaborador.ui.SplashScreenActivity</arg>
+<arg>autoGrantPermissions=true</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://appium.io/docs/en/2.1/cli/args/
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |
+| strict_ssl          | No     | allows you to send commands to an invalid certificate host like a self-signed one. |</doc>
+<status status="PASS" start="2024-07-08T22:02:17.830716" elapsed="3.955580"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2024-07-08T22:02:22.714633" level="INFO">criteria is br.com.fortes.appcolaborador.homolog:id/btn_enter</msg>
+<arg>id=br.com.fortes.appcolaborador.homolog:id/btn_enter</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2024-07-08T22:02:21.787228" elapsed="0.927540"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-07-08T22:02:22.717235" level="INFO">Clicking element 'id=br.com.fortes.appcolaborador.homolog:id/btn_enter'.</msg>
+<msg time="2024-07-08T22:02:22.812300" level="INFO">criteria is br.com.fortes.appcolaborador.homolog:id/btn_enter</msg>
+<arg>id=br.com.fortes.appcolaborador.homolog:id/btn_enter</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-07-08T22:02:22.715151" elapsed="0.097226"/>
+</kw>
+<status status="PASS" start="2024-07-08T22:02:17.830495" elapsed="4.982040"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2024-07-08T22:02:23.949860" level="INFO">criteria is br.com.fortes.appcolaborador.homolog:id/et_cpf
+criteria is br.com.fortes.appcolaborador.homolog:id/et_cpf</msg>
+<arg>${CPF}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2024-07-08T22:02:22.812830" elapsed="1.137268"/>
+</kw>
+<kw name="Input Text" owner="AppiumLibrary">
+<msg time="2024-07-08T22:02:23.952996" level="INFO">Typing text '12345678900' into text field 'id=br.com.fortes.appcolaborador.homolog:id/et_cpf'</msg>
+<msg time="2024-07-08T22:02:24.495382" level="INFO">criteria is br.com.fortes.appcolaborador.homolog:id/et_cpf</msg>
+<arg>${CPF}</arg>
+<arg>12345678900</arg>
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<status status="PASS" start="2024-07-08T22:02:23.950667" elapsed="0.544789"/>
+</kw>
+<kw name="Element Text Should Be" owner="AppiumLibrary">
+<msg time="2024-07-08T22:02:24.498076" level="INFO">Verifying element 'id=br.com.fortes.appcolaborador.homolog:id/tv_cpf_error' contains exactly text 'CPF inválido'.</msg>
+<msg time="2024-07-08T22:02:25.125245" level="INFO">criteria is br.com.fortes.appcolaborador.homolog:id/tv_cpf_error</msg>
+<arg>id=br.com.fortes.appcolaborador.homolog:id/tv_cpf_error</arg>
+<arg>CPF inválido</arg>
+<doc>Verifies element identified by ``locator`` exactly contains text ``expected``.</doc>
+<status status="PASS" start="2024-07-08T22:02:24.495848" elapsed="0.629665"/>
+</kw>
+<kw name="Close Session" owner="base" type="TEARDOWN">
+<kw name="Close Application" owner="AppiumLibrary">
+<doc>Closes the current application and also close webdriver session.</doc>
+<status status="PASS" start="2024-07-08T22:02:25.127389" elapsed="0.170963"/>
+</kw>
+<status status="PASS" start="2024-07-08T22:02:25.126606" elapsed="0.171849"/>
+</kw>
+<status status="PASS" start="2024-07-08T22:02:17.830113" elapsed="7.468445"/>
+</test>
+<test id="s1-s2-t3" name="Login com CPF Demonstracao" line="28">
+<kw name="Open Session" owner="base" type="SETUP">
+<kw name="Open Application" owner="AppiumLibrary">
+<arg>http://0.0.0.0:4723</arg>
+<arg>appium:automationName=UiAutomator2</arg>
+<arg>platformName=Android</arg>
+<arg>appium:deviceName=Emulator</arg>
+<arg>appium:app=${APK_PATH}</arg>
+<arg>appium:udid=emulator-5554</arg>
+<arg>appium:appPackage=br.com.fortes.appcolaborador.homolog</arg>
+<arg>appium:appActivity=br.com.fortes.appcolaborador.ui.SplashScreenActivity</arg>
+<arg>autoGrantPermissions=true</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://appium.io/docs/en/2.1/cli/args/
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |
+| strict_ssl          | No     | allows you to send commands to an invalid certificate host like a self-signed one. |</doc>
+<status status="PASS" start="2024-07-08T22:02:25.299638" elapsed="3.966609"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2024-07-08T22:02:30.186005" level="INFO">criteria is br.com.fortes.appcolaborador.homolog:id/btn_enter</msg>
+<arg>id=br.com.fortes.appcolaborador.homolog:id/btn_enter</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2024-07-08T22:02:29.266835" elapsed="0.919308"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-07-08T22:02:30.188109" level="INFO">Clicking element 'id=br.com.fortes.appcolaborador.homolog:id/btn_enter'.</msg>
+<msg time="2024-07-08T22:02:30.280786" level="INFO">criteria is br.com.fortes.appcolaborador.homolog:id/btn_enter</msg>
+<arg>id=br.com.fortes.appcolaborador.homolog:id/btn_enter</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-07-08T22:02:30.186455" elapsed="0.094485"/>
+</kw>
+<status status="PASS" start="2024-07-08T22:02:25.299210" elapsed="4.981920"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2024-07-08T22:02:31.415164" level="INFO">criteria is br.com.fortes.appcolaborador.homolog:id/et_cpf
+criteria is br.com.fortes.appcolaborador.homolog:id/et_cpf</msg>
+<arg>${CPF}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2024-07-08T22:02:30.281534" elapsed="1.133883"/>
+</kw>
+<kw name="Input Text" owner="AppiumLibrary">
+<msg time="2024-07-08T22:02:31.418460" level="INFO">Typing text '56500384245' into text field 'id=br.com.fortes.appcolaborador.homolog:id/et_cpf'</msg>
+<msg time="2024-07-08T22:02:31.967852" level="INFO">criteria is br.com.fortes.appcolaborador.homolog:id/et_cpf</msg>
+<arg>${CPF}</arg>
+<arg>56500384245</arg>
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<status status="PASS" start="2024-07-08T22:02:31.416043" elapsed="0.552049"/>
+</kw>
+<kw name="Element Text Should Be" owner="AppiumLibrary">
+<msg time="2024-07-08T22:02:31.970723" level="INFO">Verifying element 'id=br.com.fortes.appcolaborador.homolog:id/tv_cpf_error' contains exactly text 'CPF inválido'.</msg>
+<msg time="2024-07-08T22:02:32.600894" level="INFO">criteria is br.com.fortes.appcolaborador.homolog:id/tv_cpf_error</msg>
+<arg>id=br.com.fortes.appcolaborador.homolog:id/tv_cpf_error</arg>
+<arg>CPF inválido</arg>
+<doc>Verifies element identified by ``locator`` exactly contains text ``expected``.</doc>
+<status status="PASS" start="2024-07-08T22:02:31.968692" elapsed="0.632432"/>
+</kw>
+<kw name="Close Session" owner="base" type="TEARDOWN">
+<kw name="Close Application" owner="AppiumLibrary">
+<doc>Closes the current application and also close webdriver session.</doc>
+<status status="PASS" start="2024-07-08T22:02:32.602904" elapsed="0.190542"/>
+</kw>
+<status status="PASS" start="2024-07-08T22:02:32.602321" elapsed="0.191242"/>
+</kw>
+<status status="PASS" start="2024-07-08T22:02:25.298834" elapsed="7.494833"/>
+</test>
+<status status="PASS" start="2024-07-08T22:02:00.820212" elapsed="31.973920"/>
+</suite>
+<status status="PASS" start="2024-07-08T22:01:37.262086" elapsed="55.532676"/>
+</suite>
+<statistics>
+<total>
+<stat pass="4" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="4" fail="0" skip="0" id="s1" name="Tests">Tests</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="consultaBatidas">Tests.consultaBatidas</stat>
+<stat pass="3" fail="0" skip="0" id="s1-s2" name="Login">Tests.Login</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
