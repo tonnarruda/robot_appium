@@ -15,7 +15,8 @@ Open Session
     ...                 appium:udid=emulator-5554
     ...                 appium:appPackage=br.com.fortes.appcolaborador.homolog
     ...                 appium:appActivity=br.com.fortes.appcolaborador.ui.SplashScreenActivity
-    ...                 autoGrantPermissions=true     
+    ...                 autoGrantPermissions=true    
+    ...                 fullReset=true 
     Wait Until Element Is Visible    id=br.com.fortes.appcolaborador.homolog:id/btn_enter
     AppiumLibrary.Click Element      id=br.com.fortes.appcolaborador.homolog:id/btn_enter
 
