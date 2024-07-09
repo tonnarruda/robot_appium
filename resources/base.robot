@@ -17,9 +17,21 @@ Open Session
     ...                 appium:appActivity=br.com.fortes.appcolaborador.ui.SplashScreenActivity
     ...                 autoGrantPermissions=true    
     ...                 fullReset=true 
+    ...                 disableWindowAnimation=true
     Wait Until Element Is Visible    id=br.com.fortes.appcolaborador.homolog:id/btn_enter
     AppiumLibrary.Click Element      id=br.com.fortes.appcolaborador.homolog:id/btn_enter
 
  
 Close Session
     Close Application
+
+Accept Alerts
+    Wait Until Element Is Visible    id=android:id/message
+    Click Text                       OK
+    Wait Until Element Is Visible    id=com.google.android.documentsui:id/option_menu_create_dir
+    Click Text                       sdk_gphone64_arm64 
+    Wait Until Element Is Visible    xpath=//android.widget.TextView[@resource-id="android:id/title" and @text="Movies"]
+    Click Text                       Movies 
+    Click Text                       USE THIS FOLDER
+    Wait Until Element Is Visible    id=android:id/button1
+    Click Text                       ALLOW 
