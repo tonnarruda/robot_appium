@@ -4,9 +4,6 @@ Library        AppiumLibrary
 
 *** Variables ***
 ${APK_PATH}        ${EXECDIR}/app/Colabore_v2.9.2_1_homolog.apk
-${CPF}             id=br.com.fortes.appcolaborador.homolog:id/et_cpf
-${PASSWORD}        id=br.com.fortes.appcolaborador.homolog:id/et_password
-${BTN_ENTRAR}      id=br.com.fortes.appcolaborador.homolog:id/btn_sign_in
 
 *** Keywords ***
 Open Session
@@ -25,17 +22,3 @@ Open Session
  
 Close Session
     Close Application
-
-Login
-    Open Session   
-    Wait Until Element Is Visible    ${CPF}
-    AppiumLibrary.Input Text         ${CPF}        76963355452
-    Wait Until Element Is Visible    ${PASSWORD}
-    AppiumLibrary.Input Text         ${PASSWORD}    12345678
-    AppiumLibrary.Click Element      ${BTN_ENTRAR} 
-    Wait Until Element Is Visible    id=android:id/message
-    Click Text                       OK
-    Wait Until Element Is Visible    id=android:id/button1
-    Click Text                       USE THIS FOLDER
-    Wait Until Element Is Visible    id=android:id/button1
-    Click Text                       ALLOW

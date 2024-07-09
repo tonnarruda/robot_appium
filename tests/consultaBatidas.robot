@@ -1,7 +1,8 @@
 *** Settings ***
 Resource    ../resources/base.robot
+Resource    ../resources/screenLogin.robot
 
-Test Setup        Login
+Test Setup        Login Session
 Test Teardown     Close Session
 
 *** Test Cases ***
