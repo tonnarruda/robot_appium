@@ -1,0 +1,6 @@
+#Executar Todos os testes
+# robot -d ./logs tests/
+
+#source /Users/tonnarruda/Library/Caches/pypoetry/virtualenvs/robot-appium-afyi42om-py3.12/bin/activate
+#export PATH="/Users/tonnarruda/Library/Caches/pypoetry/virtualenvs/robot-appium-afyi42om-py3.12/bin:$PATH"
+#source ~/.zshrc

@@ -3,7 +3,7 @@
 Library        AppiumLibrary
 
 *** Variables ***
-${APK_PATH}    /Users/tonnarruda/workspace/ton/robot_appium/app/Colabore_v2.9.2_1_homolog.apk
+${APK_PATH}        ${EXECDIR}/app/Colabore_v2.9.2_1_homolog.apk
 ${CPF}             id=br.com.fortes.appcolaborador.homolog:id/et_cpf
 ${PASSWORD}        id=br.com.fortes.appcolaborador.homolog:id/et_password
 ${BTN_ENTRAR}      id=br.com.fortes.appcolaborador.homolog:id/btn_sign_in
