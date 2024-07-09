@@ -3,7 +3,7 @@
 Library        AppiumLibrary
 
 *** Variables ***
-${APK_PATH}        ${EXECDIR}/app/Colabore_v2.9.2_1_homolog.apk
+${APK_PATH}        ${EXECDIR}/app/Colabore.apk
 
 *** Keywords ***
 Open Session
