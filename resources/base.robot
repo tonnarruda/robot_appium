@@ -33,5 +33,5 @@ Accept Alerts
     Wait Until Element Is Visible    xpath=//android.widget.TextView[@resource-id="android:id/title" and @text="Movies"]
     Click Text                       Movies 
     Click Text                       USE THIS FOLDER
-    Wait Until Element Is Visible    id=android:id/button1
+    Wait Until Element Is Visible    id=com.google.android.documentsui:id/alertTitle
     Click Text                       ALLOW 

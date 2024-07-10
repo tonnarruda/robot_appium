@@ -1,16 +1,16 @@
 *** Settings ***
 Resource    ../resources/base.robot
 Resource    ../resources/screenLogin.robot
+Resource    ../resources/screenHome.robot
+Resource    ../resources/screenPonto.robot
 
 Test Setup        Login Session
 Test Teardown     Close Session
 
 *** Test Cases ***
-Consultar Batidas de Ponto
-    Wait Until Element Is Visible    xpath=//android.widget.TextView[@resource-id="br.com.fortes.appcolaborador.homolog:id/navigation_bar_item_small_label_view" and @text="Ponto"]
-    Click Element                    xpath=//android.widget.TextView[@resource-id="br.com.fortes.appcolaborador.homolog:id/navigation_bar_item_small_label_view" and @text="Ponto"]
-    Wait Until Element Is Visible    id=br.com.fortes.appcolaborador.homolog:id/text_functionality
-    Click Element                    id=br.com.fortes.appcolaborador.homolog:id/text_functionality
+Consultar Batidas de Ponto Existente
+    Click Ponto Icon
+    Clica Historico Batida
     Wait Until Element Is Visible    id=br.com.fortes.appcolaborador.homolog:id/text_matricula
     Click Text                       mar.
     Wait Until Element Is Visible    id=br.com.fortes.appcolaborador.homolog:id/tv_data_month
