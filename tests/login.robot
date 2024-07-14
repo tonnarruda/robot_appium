@@ -1,7 +1,7 @@
 *** Settings ***
 Resource    ../resources/base.robot
 Resource    ../resources/screenLogin.robot
-Resource    ../resources/screenHome.robot
+# Resource    ../resources/screenHome.robot
 
 Test Setup        Open Session
 Test Teardown     Close Session

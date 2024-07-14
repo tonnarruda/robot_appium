@@ -1,5 +1,5 @@
 *** Settings ***
-Resource    resources/base.robot
+Resource        resources/base.robot
 
 *** Variables ***
 ${HOME_ICON}       xpath=(//android.widget.ImageView[@resource-id="br.com.fortes.appcolaborador.homolog:id/navigation_bar_item_icon_view"])[1]
@@ -25,4 +25,3 @@ Click Folha Icon
 Click RH Icon   
     Wait Until Element Is Visible    ${RH_ICON}
     Click Element                    ${RH_ICON}
-    
